@@ -1,0 +1,40 @@
+Building for production...
+[0/3] Write sources
+[1/3] Write swift-version--1AB21518FC5DEDBE.txt
+[3/4] Compiling LiveWallpaperPro ContentView.swift
+/Users/Rinesh_buzz/Documents/Skill creator/VideoWallpaperApp/VideoWallpaperApp.swift:298:13: warning: variable 'cpu' was never used; consider replacing with '_' or removing it [#no-usage]
+296 |     
+297 |     private func updatePerformanceStats() {
+298 |         var cpu: Double = 0
+    |             `- warning: variable 'cpu' was never used; consider replacing with '_' or removing it [#no-usage]
+299 |         var ram: Double = 0
+300 |         
+
+/Users/Rinesh_buzz/Documents/Skill creator/VideoWallpaperApp/WallpaperView.swift:180:10: warning: 'onChange(of:perform:)' was deprecated in macOS 14.0: Use `onChange` with a two or zero parameter action closure instead. [#DeprecatedDeclaration]
+178 |             startTimer()
+179 |         }
+180 |         .onChange(of: manager.currentIndex) { _ in
+    |          `- warning: 'onChange(of:perform:)' was deprecated in macOS 14.0: Use `onChange` with a two or zero parameter action closure instead. [#DeprecatedDeclaration]
+181 |             id = UUID()
+182 |             startTimer()
+
+/Users/Rinesh_buzz/Documents/Skill creator/VideoWallpaperApp/WallpaperView.swift:184:10: warning: 'onChange(of:perform:)' was deprecated in macOS 14.0: Use `onChange` with a two or zero parameter action closure instead. [#DeprecatedDeclaration]
+182 |             startTimer()
+183 |         }
+184 |         .onChange(of: manager.selectedInterval) { _ in
+    |          `- warning: 'onChange(of:perform:)' was deprecated in macOS 14.0: Use `onChange` with a two or zero parameter action closure instead. [#DeprecatedDeclaration]
+185 |             startTimer()
+186 |         }
+
+/Users/Rinesh_buzz/Documents/Skill creator/VideoWallpaperApp/WallpaperView.swift:187:10: warning: 'onChange(of:perform:)' was deprecated in macOS 14.0: Use `onChange` with a two or zero parameter action closure instead. [#DeprecatedDeclaration]
+185 |             startTimer()
+186 |         }
+187 |         .onChange(of: manager.customIntervalString) { _ in
+    |          `- warning: 'onChange(of:perform:)' was deprecated in macOS 14.0: Use `onChange` with a two or zero parameter action closure instead. [#DeprecatedDeclaration]
+188 |             startTimer()
+189 |         }
+
+[#DeprecatedDeclaration]: <https://docs.swift.org/compiler/documentation/diagnostics/deprecated-declaration>
+[3/5] Write Objects.LinkFileList
+[4/5] Linking LiveWallpaperPro
+Build complete! (5.25s)

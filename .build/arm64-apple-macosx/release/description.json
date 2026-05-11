@@ -1,0 +1,314 @@
+{
+  "builtTestProducts" : [
+
+  ],
+  "copyCommands" : {
+
+  },
+  "explicitTargetDependencyImportCheckingMode" : {
+    "none" : {
+
+    }
+  },
+  "generatedSourceTargetSet" : [
+
+  ],
+  "pluginDescriptions" : [
+
+  ],
+  "swiftCommands" : {
+    "C.LiveWallpaperPro-arm64-apple-macosx26.0-release.module" : {
+      "executable" : "/Library/Developer/CommandLineTools/usr/bin/swiftc",
+      "fileList" : "/Users/Rinesh_buzz/Documents/Skill creator/VideoWallpaperApp/.build/arm64-apple-macosx/release/LiveWallpaperPro.build/sources",
+      "importPath" : "/Users/Rinesh_buzz/Documents/Skill creator/VideoWallpaperApp/.build/arm64-apple-macosx/release/Modules",
+      "inputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/Rinesh_buzz/Documents/Skill creator/VideoWallpaperApp/ContentView.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/Rinesh_buzz/Documents/Skill creator/VideoWallpaperApp/LibraryManager.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/Rinesh_buzz/Documents/Skill creator/VideoWallpaperApp/LibraryView.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/Rinesh_buzz/Documents/Skill creator/VideoWallpaperApp/VideoWallpaperApp.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/Rinesh_buzz/Documents/Skill creator/VideoWallpaperApp/WallpaperView.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/Rinesh_buzz/Documents/Skill creator/VideoWallpaperApp/WallpaperWindow.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/Rinesh_buzz/Documents/Skill creator/VideoWallpaperApp/.build/arm64-apple-macosx/release/swift-version--1AB21518FC5DEDBE.txt"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/Rinesh_buzz/Documents/Skill creator/VideoWallpaperApp/.build/arm64-apple-macosx/release/LiveWallpaperPro.build/sources"
+        }
+      ],
+      "isLibrary" : false,
+      "moduleName" : "LiveWallpaperPro",
+      "moduleOutputPath" : "/Users/Rinesh_buzz/Documents/Skill creator/VideoWallpaperApp/.build/arm64-apple-macosx/release/Modules/LiveWallpaperPro.swiftmodule",
+      "objects" : [
+        "/Users/Rinesh_buzz/Documents/Skill creator/VideoWallpaperApp/.build/arm64-apple-macosx/release/LiveWallpaperPro.build/ContentView.swift.o",
+        "/Users/Rinesh_buzz/Documents/Skill creator/VideoWallpaperApp/.build/arm64-apple-macosx/release/LiveWallpaperPro.build/LibraryManager.swift.o",
+        "/Users/Rinesh_buzz/Documents/Skill creator/VideoWallpaperApp/.build/arm64-apple-macosx/release/LiveWallpaperPro.build/LibraryView.swift.o",
+        "/Users/Rinesh_buzz/Documents/Skill creator/VideoWallpaperApp/.build/arm64-apple-macosx/release/LiveWallpaperPro.build/VideoWallpaperApp.swift.o",
+        "/Users/Rinesh_buzz/Documents/Skill creator/VideoWallpaperApp/.build/arm64-apple-macosx/release/LiveWallpaperPro.build/WallpaperView.swift.o",
+        "/Users/Rinesh_buzz/Documents/Skill creator/VideoWallpaperApp/.build/arm64-apple-macosx/release/LiveWallpaperPro.build/WallpaperWindow.swift.o"
+      ],
+      "otherArguments" : [
+        "-target",
+        "arm64-apple-macosx14.0",
+        "-whole-module-optimization",
+        "-num-threads",
+        "8",
+        "-serialize-diagnostics",
+        "-O",
+        "-j8",
+        "-DSWIFT_PACKAGE",
+        "-DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE",
+        "-module-cache-path",
+        "/Users/Rinesh_buzz/Documents/Skill creator/VideoWallpaperApp/.build/arm64-apple-macosx/release/ModuleCache",
+        "-parseable-output",
+        "-Xfrontend",
+        "-entry-point-function-name",
+        "-Xfrontend",
+        "LiveWallpaperPro_main",
+        "-swift-version",
+        "5",
+        "-I",
+        "/Library/Developer/CommandLineTools/Library/Developer/Frameworks",
+        "-L",
+        "/Library/Developer/CommandLineTools/Library/Developer/Frameworks",
+        "-plugin-path",
+        "/Library/Developer/CommandLineTools/usr/lib/swift/host/plugins/testing",
+        "-sdk",
+        "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk",
+        "-g",
+        "-Xcc",
+        "-isysroot",
+        "-Xcc",
+        "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk",
+        "-Xcc",
+        "-fPIC",
+        "-Xcc",
+        "-g",
+        "-package-name",
+        "videowallpaperapp"
+      ],
+      "outputFileMapPath" : "/Users/Rinesh_buzz/Documents/Skill creator/VideoWallpaperApp/.build/arm64-apple-macosx/release/LiveWallpaperPro.build/output-file-map.json",
+      "outputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/Rinesh_buzz/Documents/Skill creator/VideoWallpaperApp/.build/arm64-apple-macosx/release/LiveWallpaperPro.build/ContentView.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/Rinesh_buzz/Documents/Skill creator/VideoWallpaperApp/.build/arm64-apple-macosx/release/LiveWallpaperPro.build/LibraryManager.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/Rinesh_buzz/Documents/Skill creator/VideoWallpaperApp/.build/arm64-apple-macosx/release/LiveWallpaperPro.build/LibraryView.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/Rinesh_buzz/Documents/Skill creator/VideoWallpaperApp/.build/arm64-apple-macosx/release/LiveWallpaperPro.build/VideoWallpaperApp.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/Rinesh_buzz/Documents/Skill creator/VideoWallpaperApp/.build/arm64-apple-macosx/release/LiveWallpaperPro.build/WallpaperView.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/Rinesh_buzz/Documents/Skill creator/VideoWallpaperApp/.build/arm64-apple-macosx/release/LiveWallpaperPro.build/WallpaperWindow.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/Rinesh_buzz/Documents/Skill creator/VideoWallpaperApp/.build/arm64-apple-macosx/release/Modules/LiveWallpaperPro.swiftmodule"
+        }
+      ],
+      "prepareForIndexing" : false,
+      "sources" : [
+        "/Users/Rinesh_buzz/Documents/Skill creator/VideoWallpaperApp/ContentView.swift",
+        "/Users/Rinesh_buzz/Documents/Skill creator/VideoWallpaperApp/LibraryManager.swift",
+        "/Users/Rinesh_buzz/Documents/Skill creator/VideoWallpaperApp/LibraryView.swift",
+        "/Users/Rinesh_buzz/Documents/Skill creator/VideoWallpaperApp/VideoWallpaperApp.swift",
+        "/Users/Rinesh_buzz/Documents/Skill creator/VideoWallpaperApp/WallpaperView.swift",
+        "/Users/Rinesh_buzz/Documents/Skill creator/VideoWallpaperApp/WallpaperWindow.swift"
+      ],
+      "tempsPath" : "/Users/Rinesh_buzz/Documents/Skill creator/VideoWallpaperApp/.build/arm64-apple-macosx/release/LiveWallpaperPro.build",
+      "wholeModuleOptimization" : true
+    }
+  },
+  "swiftFrontendCommands" : {
+
+  },
+  "swiftTargetScanArgs" : {
+    "LiveWallpaperPro" : [
+      "/Library/Developer/CommandLineTools/usr/bin/swiftc",
+      "-module-name",
+      "LiveWallpaperPro",
+      "-package-name",
+      "videowallpaperapp",
+      "-c",
+      "/Users/Rinesh_buzz/Documents/Skill creator/VideoWallpaperApp/ContentView.swift",
+      "/Users/Rinesh_buzz/Documents/Skill creator/VideoWallpaperApp/LibraryManager.swift",
+      "/Users/Rinesh_buzz/Documents/Skill creator/VideoWallpaperApp/LibraryView.swift",
+      "/Users/Rinesh_buzz/Documents/Skill creator/VideoWallpaperApp/VideoWallpaperApp.swift",
+      "/Users/Rinesh_buzz/Documents/Skill creator/VideoWallpaperApp/WallpaperView.swift",
+      "/Users/Rinesh_buzz/Documents/Skill creator/VideoWallpaperApp/WallpaperWindow.swift",
+      "-I",
+      "/Users/Rinesh_buzz/Documents/Skill creator/VideoWallpaperApp/.build/arm64-apple-macosx/release/Modules",
+      "-target",
+      "arm64-apple-macosx14.0",
+      "-whole-module-optimization",
+      "-num-threads",
+      "8",
+      "-serialize-diagnostics",
+      "-O",
+      "-j8",
+      "-DSWIFT_PACKAGE",
+      "-DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE",
+      "-module-cache-path",
+      "/Users/Rinesh_buzz/Documents/Skill creator/VideoWallpaperApp/.build/arm64-apple-macosx/release/ModuleCache",
+      "-parseable-output",
+      "-Xfrontend",
+      "-entry-point-function-name",
+      "-Xfrontend",
+      "LiveWallpaperPro_main",
+      "-swift-version",
+      "5",
+      "-I",
+      "/Library/Developer/CommandLineTools/Library/Developer/Frameworks",
+      "-L",
+      "/Library/Developer/CommandLineTools/Library/Developer/Frameworks",
+      "-plugin-path",
+      "/Library/Developer/CommandLineTools/usr/lib/swift/host/plugins/testing",
+      "-sdk",
+      "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk",
+      "-g",
+      "-Xcc",
+      "-isysroot",
+      "-Xcc",
+      "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk",
+      "-Xcc",
+      "-fPIC",
+      "-Xcc",
+      "-g",
+      "-package-name",
+      "videowallpaperapp",
+      "-driver-use-frontend-path",
+      "/Library/Developer/CommandLineTools/usr/bin/swiftc"
+    ]
+  },
+  "targetDependencyMap" : {
+    "LiveWallpaperPro" : [
+
+    ]
+  },
+  "testDiscoveryCommands" : {
+
+  },
+  "testEntryPointCommands" : {
+
+  },
+  "traitConfiguration" : {
+    "default" : {
+
+    }
+  },
+  "writeCommands" : {
+    "/Users/Rinesh_buzz/Documents/Skill creator/VideoWallpaperApp/.build/arm64-apple-macosx/release/LiveWallpaperPro.build/sources" : {
+      "alwaysOutOfDate" : false,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<sources-file-list>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/Rinesh_buzz/Documents/Skill creator/VideoWallpaperApp/ContentView.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/Rinesh_buzz/Documents/Skill creator/VideoWallpaperApp/LibraryManager.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/Rinesh_buzz/Documents/Skill creator/VideoWallpaperApp/LibraryView.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/Rinesh_buzz/Documents/Skill creator/VideoWallpaperApp/VideoWallpaperApp.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/Rinesh_buzz/Documents/Skill creator/VideoWallpaperApp/WallpaperView.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/Rinesh_buzz/Documents/Skill creator/VideoWallpaperApp/WallpaperWindow.swift"
+        }
+      ],
+      "outputFilePath" : "/Users/Rinesh_buzz/Documents/Skill creator/VideoWallpaperApp/.build/arm64-apple-macosx/release/LiveWallpaperPro.build/sources"
+    },
+    "/Users/Rinesh_buzz/Documents/Skill creator/VideoWallpaperApp/.build/arm64-apple-macosx/release/LiveWallpaperPro.product/Objects.LinkFileList" : {
+      "alwaysOutOfDate" : false,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<link-file-list>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/Rinesh_buzz/Documents/Skill creator/VideoWallpaperApp/.build/arm64-apple-macosx/release/LiveWallpaperPro.build/ContentView.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/Rinesh_buzz/Documents/Skill creator/VideoWallpaperApp/.build/arm64-apple-macosx/release/LiveWallpaperPro.build/LibraryManager.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/Rinesh_buzz/Documents/Skill creator/VideoWallpaperApp/.build/arm64-apple-macosx/release/LiveWallpaperPro.build/LibraryView.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/Rinesh_buzz/Documents/Skill creator/VideoWallpaperApp/.build/arm64-apple-macosx/release/LiveWallpaperPro.build/VideoWallpaperApp.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/Rinesh_buzz/Documents/Skill creator/VideoWallpaperApp/.build/arm64-apple-macosx/release/LiveWallpaperPro.build/WallpaperView.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/Rinesh_buzz/Documents/Skill creator/VideoWallpaperApp/.build/arm64-apple-macosx/release/LiveWallpaperPro.build/WallpaperWindow.swift.o"
+        }
+      ],
+      "outputFilePath" : "/Users/Rinesh_buzz/Documents/Skill creator/VideoWallpaperApp/.build/arm64-apple-macosx/release/LiveWallpaperPro.product/Objects.LinkFileList"
+    },
+    "/Users/Rinesh_buzz/Documents/Skill creator/VideoWallpaperApp/.build/arm64-apple-macosx/release/swift-version--1AB21518FC5DEDBE.txt" : {
+      "alwaysOutOfDate" : true,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<swift-get-version>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Library/Developer/CommandLineTools/usr/bin/swiftc"
+        }
+      ],
+      "outputFilePath" : "/Users/Rinesh_buzz/Documents/Skill creator/VideoWallpaperApp/.build/arm64-apple-macosx/release/swift-version--1AB21518FC5DEDBE.txt"
+    }
+  }
+}

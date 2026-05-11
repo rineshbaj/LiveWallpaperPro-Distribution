@@ -1,0 +1,37 @@
+Building for debugging...
+[0/4] Write sources
+[1/4] Write swift-version--1AB21518FC5DEDBE.txt
+[3/8] Compiling LiveWallpaperPro LibraryView.swift
+[4/8] Compiling LiveWallpaperPro VideoWallpaperApp.swift
+[5/8] Compiling LiveWallpaperPro ContentView.swift
+[6/8] Emitting module LiveWallpaperPro
+[7/9] Compiling LiveWallpaperPro WallpaperView.swift
+/Users/Rinesh_buzz/Documents/Skill creator/VideoWallpaperApp/WallpaperView.swift:174:10: warning: 'onChange(of:perform:)' was deprecated in macOS 14.0: Use `onChange` with a two or zero parameter action closure instead. [#DeprecatedDeclaration]
+172 |             startTimer()
+173 |         }
+174 |         .onChange(of: manager.currentIndex) { _ in
+    |          `- warning: 'onChange(of:perform:)' was deprecated in macOS 14.0: Use `onChange` with a two or zero parameter action closure instead. [#DeprecatedDeclaration]
+175 |             id = UUID()
+176 |             startTimer()
+
+/Users/Rinesh_buzz/Documents/Skill creator/VideoWallpaperApp/WallpaperView.swift:178:10: warning: 'onChange(of:perform:)' was deprecated in macOS 14.0: Use `onChange` with a two or zero parameter action closure instead. [#DeprecatedDeclaration]
+176 |             startTimer()
+177 |         }
+178 |         .onChange(of: manager.selectedInterval) { _ in
+    |          `- warning: 'onChange(of:perform:)' was deprecated in macOS 14.0: Use `onChange` with a two or zero parameter action closure instead. [#DeprecatedDeclaration]
+179 |             startTimer()
+180 |         }
+
+/Users/Rinesh_buzz/Documents/Skill creator/VideoWallpaperApp/WallpaperView.swift:181:10: warning: 'onChange(of:perform:)' was deprecated in macOS 14.0: Use `onChange` with a two or zero parameter action closure instead. [#DeprecatedDeclaration]
+179 |             startTimer()
+180 |         }
+181 |         .onChange(of: manager.customIntervalString) { _ in
+    |          `- warning: 'onChange(of:perform:)' was deprecated in macOS 14.0: Use `onChange` with a two or zero parameter action closure instead. [#DeprecatedDeclaration]
+182 |             startTimer()
+183 |         }
+
+[#DeprecatedDeclaration]: <https://docs.swift.org/compiler/documentation/diagnostics/deprecated-declaration>
+[7/10] Write Objects.LinkFileList
+[8/10] Linking LiveWallpaperPro
+[9/10] Applying LiveWallpaperPro
+Build complete! (3.73s)
