@@ -1,0 +1,22 @@
+# Live Wallpaper Pro — Software License Agreement
+
+Copyright (c) 2026 rineshbaj. All rights reserved.
+
+## 1. PROPRIETARY AND CONFIDENTIAL
+This software, including its source code, logic, and performance optimization techniques (specifically the "Zero-Drain" 0.1% CPU occlusion logic), is the exclusive intellectual property of **rineshbaj**.
+
+## 2. GRANT OF LICENSE
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to view, study, and fork this repository for **personal, non-commercial, and educational purposes only.**
+
+## 3. RESTRICTIONS
+You are explicitly **FORBIDDEN** from:
+*   **Competing**: Using any part of this source code to create, develop, or distribute a competing Live Wallpaper or Desktop Personalization product.
+*   **Monetization**: Selling, leasing, or otherwise monetizing the Software or any derivative works created from its source code.
+*   **Redistribution**: Redistributing the compiled binaries or modified source code for commercial gain without explicit written consent from the author.
+*   **Attribution**: Removing or modifying any copyright notices or branding from the source code.
+
+## 4. NO WARRANTY
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+## 5. CONTACT
+For commercial licensing inquiries or permission requests, please contact the repository owner via GitHub.
