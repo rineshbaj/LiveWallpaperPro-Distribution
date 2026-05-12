@@ -1,0 +1,136 @@
+[
+  {
+    "id": 1,
+    "title": "Ocean Sunrise",
+    "cat": "ocean",
+    "vibes": [
+      "nature",
+      "minimal"
+    ],
+    "free": true,
+    "video": "https://videos.pexels.com/video-files/1409899/1409899-uhd_2560_1440_25fps.mp4",
+    "thumb": "https://images.pexels.com/videos/1409899/pictures/preview-0.jpg"
+  },
+  {
+    "id": 2,
+    "title": "Mountain Fog",
+    "cat": "nature",
+    "vibes": [
+      "nature",
+      "cozy",
+      "dark"
+    ],
+    "free": true,
+    "video": "https://videos.pexels.com/video-files/3571264/3571264-uhd_2560_1440_30fps.mp4",
+    "thumb": "https://images.pexels.com/videos/3571264/pictures/preview-0.jpg"
+  },
+  {
+    "id": 3,
+    "title": "City Lights",
+    "cat": "city",
+    "vibes": [
+      "energetic",
+      "dark"
+    ],
+    "free": true,
+    "video": "https://videos.pexels.com/video-files/3129957/3129957-uhd_2560_1440_25fps.mp4",
+    "thumb": "https://images.pexels.com/videos/3129957/pictures/preview-0.jpg"
+  },
+  {
+    "id": 4,
+    "title": "Aurora",
+    "cat": "space",
+    "vibes": [
+      "nature",
+      "dark"
+    ],
+    "free": false,
+    "video": "https://videos.pexels.com/video-files/4815600/4815600-uhd_2560_1440_25fps.mp4",
+    "thumb": "https://images.pexels.com/videos/4815600/pictures/preview-0.jpg"
+  },
+  {
+    "id": 5,
+    "title": "Desert Dunes",
+    "cat": "nature",
+    "vibes": [
+      "minimal",
+      "nature"
+    ],
+    "free": true,
+    "video": "https://videos.pexels.com/video-files/2169880/2169880-uhd_2560_1440_30fps.mp4",
+    "thumb": "https://images.pexels.com/videos/2169880/pictures/preview-0.jpg"
+  },
+  {
+    "id": 6,
+    "title": "Abstract Flow",
+    "cat": "abstract",
+    "vibes": [
+      "minimal",
+      "energetic"
+    ],
+    "free": false,
+    "video": "https://videos.pexels.com/video-files/3163534/3163534-uhd_2560_1440_25fps.mp4",
+    "thumb": "https://images.pexels.com/videos/3163534/pictures/preview-0.jpg"
+  },
+  {
+    "id": 7,
+    "title": "Rain on Glass",
+    "cat": "minimal",
+    "vibes": [
+      "cozy",
+      "dark",
+      "minimal"
+    ],
+    "free": true,
+    "video": "https://videos.pexels.com/video-files/3831827/3831827-uhd_2560_1440_25fps.mp4",
+    "thumb": "https://images.pexels.com/videos/3831827/pictures/preview-0.jpg"
+  },
+  {
+    "id": 8,
+    "title": "Galaxy Drift",
+    "cat": "space",
+    "vibes": [
+      "dark",
+      "nature"
+    ],
+    "free": false,
+    "video": "https://videos.pexels.com/video-files/2946704/2946704-uhd_2560_1440_25fps.mp4",
+    "thumb": "https://images.pexels.com/videos/2946704/pictures/preview-0.jpg"
+  },
+  {
+    "id": 9,
+    "title": "Beyond Human",
+    "cat": "abstract",
+    "vibes": [
+      "dark",
+      "energetic"
+    ],
+    "free": false,
+    "video": "https://github.com/rineshbaj/lwpro-wallpapers/releases/download/v1.0/amatista-studio_26-beyond-human.mp4",
+    "thumb": "https://github.com/rineshbaj/lwpro-wallpapers/releases/download/v1.0/amatista-studio_26-beyond-human.mp4"
+  },
+  {
+    "id": 10,
+    "title": "Cloud Reflect",
+    "cat": "nature",
+    "vibes": [
+      "nature",
+      "minimal"
+    ],
+    "free": true,
+    "video": "https://github.com/rineshbaj/lwpro-wallpapers/releases/download/v1.0/cloud-reflect.3840x2160.mp4",
+    "thumb": "https://github.com/rineshbaj/lwpro-wallpapers/releases/download/v1.0/cloud-reflect.3840x2160.mp4"
+  },
+  {
+    "id": 11,
+    "title": "Spider-Man Noir",
+    "cat": "city",
+    "vibes": [
+      "dark",
+      "urban"
+    ],
+    "free": false,
+    "video": "https://github.com/rineshbaj/lwpro-wallpapers/releases/download/v1.0/spider-man-noir.3840x2160.mp4",
+    "thumb": "https://github.com/rineshbaj/lwpro-wallpapers/releases/download/v1.0/spider-man-noir.3840x2160.mp4"
+  }
+]

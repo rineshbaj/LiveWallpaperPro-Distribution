@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LWPRO — Zero-Drain Live Wallpapers for macOS</title>
+  <meta name="description" content="The world's most efficient live wallpaper app for Mac. 4K HDR motion wallpapers with 0.1% CPU usage. Native Swift performance for zero battery drain." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles_v4.css" />
+  <script src="https://app.lemonsqueezy.com/js/lemon.js" defer></script>
+</head>
+<body>
+
+  <!-- Custom Cursor -->
+  <div id="cursor"></div>
+  <div id="cursor-ring"></div>
+
+  <!-- Navigation -->
+  <nav id="nav">
+    <a href="/" class="logo">LWPRO</a>
+    <div class="nav-right">
+      <a href="#gallery" class="nav-link">Explore</a>
+      <a href="#pricing" class="nav-link">Pro</a>
+      <a href="#" class="btn-download">
+        <svg viewBox="0 0 384 512" width="14"><path fill="currentColor" d="M318.7 268.7c-.2-36.7 16.4-64.4 50-84.8-18.8-26.9-47.2-41.7-84.7-44.6-35.5-2.8-74.3 20.7-88.5 20.7-15 0-49.4-19.7-76.4-19.7C63.3 141.2 4 184.8 4 273.5q0 39.3 14.4 81.2c12.8 36.7 59 126.7 107.2 125.2 25.2-.6 43-17.9 75.8-17.9 31.8 0 48.3 17.9 76.4 17.9 48.6-.7 90.4-82.5 102.6-119.3-65.2-30.7-61.7-90-61.7-91.9zm-56.6-164.2c27.3-32.4 24.8-61.9 24-72.5-24.1 1.4-52 16.4-67.9 34.9-17.5 19.8-27.8 44.3-25.6 71.9 26.1 2 49.9-11.4 69.5-34.3z"/></svg>
+        <span>Download</span>
+      </a>
+      <a href="https://github.com/rineshbaj/LiveWallpaperPro-Distribution/releases/download/v1.0.0/LiveWallpaperPro_1.0.0.dmg" class="nav-cta">Get the Zero-Drain DMG</a>
+    </div>
+  </nav>
+
+  <!-- ═══ HERO: IMMERSIVE REEL ════════════════════════════════════════════ -->
+  <section class="hero" id="home">
+    <video id="heroVideo" autoplay muted loop playsinline class="hero-bg-video"></video>
+    <div class="hero-vignette"></div>
+
+    <div class="hero-content">
+      <div class="hero-eyebrow">Zero-Drain Engineering</div>
+      <h1>Your Mac,<br /><em>Actually</em> Efficient.</h1>
+      <p class="hero-sub">Most live wallpaper apps turn your Mac into a space heater. LWPRO is built in native Swift for <strong>zero-drain</strong> performance.</p>
+      <div class="hero-actions">
+        <a href="https://github.com/rineshbaj/LiveWallpaperPro-Distribution/releases/download/v1.0.0/LiveWallpaperPro_1.0.0.dmg" class="btn-pill btn-fill">Get the Zero-Drain DMG</a>
+        <a href="https://github.com/rineshbaj/LiveWallpaperPro-Distribution/releases/download/v1.0.0/LiveWallpaperPro_1.0.0.dmg" class="btn-pill btn-outline btn-apple">
+          <svg viewBox="0 0 384 512" width="16"><path fill="currentColor" d="M318.7 268.7c-.2-36.7 16.4-64.4 50-84.8-18.8-26.9-47.2-41.7-84.7-44.6-35.5-2.8-74.3 20.7-88.5 20.7-15 0-49.4-19.7-76.4-19.7C63.3 141.2 4 184.8 4 273.5q0 39.3 14.4 81.2c12.8 36.7 59 126.7 107.2 125.2 25.2-.6 43-17.9 75.8-17.9 31.8 0 48.3 17.9 76.4 17.9 48.6-.7 90.4-82.5 102.6-119.3-65.2-30.7-61.7-90-61.7-91.9zm-56.6-164.2c27.3-32.4 24.8-61.9 24-72.5-24.1 1.4-52 16.4-67.9 34.9-17.5 19.8-27.8 44.3-25.6 71.9 26.1 2 49.9-11.4 69.5-34.3z"/></svg>
+          Download for Mac
+        </a>
+        <div class="hero-stat">
+          <strong>500+</strong> wallpapers &nbsp;·&nbsp; <strong>4K</strong> HDR
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ TICKER ══════════════════════════════════════════════════════════ -->
+  <div class="ticker">
+    <div class="ticker-track">
+      <!-- duplicated for seamless loop -->
+      <span class="ticker-item">Lofi <span class="ticker-dot"></span></span>
+      <span class="ticker-item">Biophilic <span class="ticker-dot"></span></span>
+      <span class="ticker-item">Cyberpunk <span class="ticker-dot"></span></span>
+      <span class="ticker-item">Minimal <span class="ticker-dot"></span></span>
+      <span class="ticker-item">Space <span class="ticker-dot"></span></span>
+      <span class="ticker-item">Anime <span class="ticker-dot"></span></span>
+      <span class="ticker-item">Abstract <span class="ticker-dot"></span></span>
+      <span class="ticker-item">Cozy <span class="ticker-dot"></span></span>
+      <span class="ticker-item">Dark <span class="ticker-dot"></span></span>
+      <span class="ticker-item">Nature <span class="ticker-dot"></span></span>
+      <span class="ticker-item">Urban <span class="ticker-dot"></span></span>
+      <span class="ticker-item">Lofi <span class="ticker-dot"></span></span>
+      <span class="ticker-item">Biophilic <span class="ticker-dot"></span></span>
+      <span class="ticker-item">Cyberpunk <span class="ticker-dot"></span></span>
+      <span class="ticker-item">Minimal <span class="ticker-dot"></span></span>
+      <span class="ticker-item">Space <span class="ticker-dot"></span></span>
+      <span class="ticker-item">Anime <span class="ticker-dot"></span></span>
+      <span class="ticker-item">Abstract <span class="ticker-dot"></span></span>
+      <span class="ticker-item">Cozy <span class="ticker-dot"></span></span>
+      <span class="ticker-item">Dark <span class="ticker-dot"></span></span>
+      <span class="ticker-item">Nature <span class="ticker-dot"></span></span>
+      <span class="ticker-item">Urban <span class="ticker-dot"></span></span>
+    </div>
+  </div>
+
+  <!-- ═══ PERFORMANCE (Zero-Drain) ════════════════════════════════════════ -->
+  <section class="performance-section">
+    <div class="perf-content">
+      <div class="perf-text">
+        <span class="badge">Engineered for Silicon</span>
+        <h2>0.1% CPU.<br />Zero Drain.</h2>
+        <p>We built LWPRO from the ground up using native Swift and AVFoundation. When you cover your desktop or enter Full Screen, the engine <strong>instantly hibernates</strong>, releasing every single CPU cycle back to your system.</p>
+        <div class="perf-stats">
+          <div class="stat-item">
+            <span class="stat-val">0.1%</span>
+            <span class="stat-label">Idle CPU</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-val">Metal</span>
+            <span class="stat-label">GPU Accelerated</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-val">Native</span>
+            <span class="stat-label">Swift 5.10</span>
+          </div>
+        </div>
+      </div>
+      <div class="perf-visual">
+        <!-- macOS Style Activity Monitor Mockup -->
+        <div class="macos-monitor">
+          <div class="monitor-header">
+            <div class="dots"><span></span><span></span><span></span></div>
+            <div class="title">Activity Monitor (My Processes)</div>
+          </div>
+          <div class="monitor-table">
+            <div class="table-header">
+              <span>Process Name</span>
+              <span>% CPU</span>
+              <span>Threads</span>
+            </div>
+            <div class="table-row active">
+              <span class="name"><img src="https://raw.githubusercontent.com/rineshbaj/LiveWallpaperPro-Distribution/main/AppIcon.icns" width="16" style="vertical-align: middle; margin-right: 8px;">Live Wallpaper Pro</span>
+              <span class="cpu">0.1</span>
+              <span class="threads">22</span>
+            </div>
+            <div class="table-row">
+              <span class="name">WindowServer</span>
+              <span class="cpu">4.2</span>
+              <span class="threads">12</span>
+            </div>
+            <div class="table-row">
+              <span class="name">Safari</span>
+              <span class="cpu">2.8</span>
+              <span class="threads">34</span>
+            </div>
+          </div>
+          <div class="monitor-footer">
+            <div class="stats-tag">CPU History: [ ———————————————————— ]</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ GALLERY ═════════════════════════════════════════════════════════ -->
+  <section class="gallery" id="gallery">
+    <div class="gallery-header">
+      <span class="gallery-title">Collection</span>
+      <div class="filter-row" id="filterRow">
+        <button class="pill-btn active" data-cat="all">All</button>
+        <button class="pill-btn" data-cat="nature">Nature</button>
+        <button class="pill-btn" data-cat="city">Urban</button>
+        <button class="pill-btn" data-cat="space">Space</button>
+        <button class="pill-btn" data-cat="abstract">Abstract</button>
+        <button class="pill-btn" data-cat="minimal">Minimal</button>
+      </div>
+    </div>
+
+    <div class="masonry" id="wallpaperGrid">
+      <!-- Injected by app.js -->
+    </div>
+
+    <div class="load-more-wrap">
+      <button id="loadMoreBtn" class="btn-pill btn-outline">Load more</button>
+    </div>
+  </section>
+
+  <!-- ═══ PRICING ══════════════════════════════════════════════════════════ -->
+  <section class="pricing-section" id="pricing">
+    <div class="badge" style="margin-bottom: 16px;">Limited Time Offer</div>
+    <h2>Founding Member Deal.</h2>
+    <p>Join the first 100 users and get Lifetime Pro at the lowest price ever.</p>
+    
+    <div class="pricing-cards">
+      <!-- Free -->
+      <div class="pricing-card">
+        <div class="plan-label">Community</div>
+        <div class="plan-price">$0</div>
+        <div class="plan-period">Free forever</div>
+        <ul class="plan-features">
+          <li>10 curated wallpapers</li>
+          <li>Zero-Drain Engine</li>
+          <li>4K HDR Quality</li>
+        </ul>
+        <a href="https://github.com/rineshbaj/LiveWallpaperPro-Distribution/releases/download/v1.0.0/LiveWallpaperPro_1.0.0.dmg"
+           class="plan-btn plan-btn-normal">Download Free</a>
+      </div>
+
+      <!-- Lifetime -->
+      <div class="pricing-card highlighted">
+        <div class="plan-label">Pro Lifetime</div>
+        <div class="plan-price">$9<sub>.99</sub></div>
+        <div class="plan-period">one time · founding member price</div>
+        <ul class="plan-features">
+          <li>500+ Pro wallpapers</li>
+          <li>New drops every week</li>
+          <li>Priority support</li>
+          <li>Own it for life</li>
+        </ul>
+        <a href="https://rineshbaj.lemonsqueezy.com/checkout/buy/PRO_UPGRADE_ID?embed=1"
+           class="plan-btn plan-btn-highlight lemonsqueezy-button">Get Pro Access</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ CREATOR NETWORK ═══════════════════════════════════════════════════ -->
+  <section class="creators-section" id="creators">
+    <div class="creators-grid">
+      <div class="creators-visual">
+        <div class="creators-card">
+          <div class="creator-header">
+            <span class="status-dot"></span>
+            <span>Creator Revenue Active</span>
+          </div>
+          <div class="revenue-val">$420.00</div>
+          <div class="revenue-label">Total Earned This Month</div>
+          <div class="revenue-graph">
+            <div class="bar" style="height: 40%"></div>
+            <div class="bar" style="height: 60%"></div>
+            <div class="bar" style="height: 85%"></div>
+            <div class="bar" style="height: 100%"></div>
+          </div>
+        </div>
+      </div>
+      <div class="creators-text">
+        <span class="badge">For Artists</span>
+        <h2>Monetize your <br />4K Motion Art.</h2>
+        <p>Join the world's most efficient wallpaper network. Upload your art, reach thousands of Mac users, and get paid automatically as your work gets discovered.</p>
+        
+        <ul class="creator-benefits">
+          <li><strong>$10.00 Payout</strong> for every 1,000 verified app activations.</li>
+          <li><strong>Instant Automation</strong> — No manual requests. PayPal/Crypto payouts trigger the second you hit your goal.</li>
+          <li><strong>IP Protection</strong> — Your raw files are never downloadable. They stay secure inside our native engine.</li>
+        </ul>
+        
+        <a href="mailto:creators@lwpro.app?subject=Creator Application" class="btn-pill btn-fill">Apply as a Creator</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ FOOTER ═══════════════════════════════════════════════════════════ -->
+  <footer>
+    <span>© 2025 LWPRO. Made for Mac.</span>
+    <span>Built with ❤️ for people who care about their desktop.</span>
+  </footer>
+
+  <!-- ═══ LIGHTBOX MODAL ══════════════════════════════════════════════════ -->
+  <div class="lightbox" id="lightbox">
+    <div class="lightbox-inner">
+      <button class="lightbox-close" id="lightboxClose">✕ Close</button>
+      <video id="lightboxVideo" loop muted playsinline oncontextmenu="return false;" controlsList="nodownload"></video>
+      <div class="lightbox-meta">
+        <div>
+          <div class="lightbox-title" id="lightboxTitle"></div>
+          <div class="lightbox-cat" id="lightboxCat"></div>
+        </div>
+        <div class="lightbox-actions" id="lightboxActions"></div>
+      </div>
+    </div>
+  </div>
+
+  <script src="app_v4.js"></script>
+</body>
+</html>
