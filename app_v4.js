@@ -253,19 +253,14 @@ document.addEventListener('keydown', e => {
   if (e.key === 'Escape') window.closeLightbox();
 });
 
-// ─── Lemon Squeezy ─────────────────────────────────────────────────────────────
-window.createLemonSqueezy = function() {
-  if (window.LemonSqueezy) {
-    window.LemonSqueezy.Setup({
-      eventHandler: (event) => {
-        if (event.event === 'Checkout.Success') {
-          alert("Welcome to Pro! Check your email for the license key.");
-        }
-      }
-    });
-  }
+// ─── Gumroad Checkout ──────────────────────────────────────────────────────────
+const GUMROAD_URL = 'https://rineshba.gumroad.com/l/zwcysk';
+
+window.openCheckout = function() {
+  // The Gumroad script will automatically pick up clicks on elements with 'gumroad-button' class.
+  // This function remains as a fallback or for dynamic triggers.
+  window.location.href = GUMROAD_URL;
 };
 
 // ─── Boot ──────────────────────────────────────────────────────────────────────
 init();
-if (window.LemonSqueezy) window.createLemonSqueezy();
