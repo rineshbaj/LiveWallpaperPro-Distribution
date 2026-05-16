@@ -19,7 +19,9 @@ let package = Package(
                 "WallpaperView.swift",
                 "WallpaperWindow.swift",
                 "LibraryManager.swift",
-                "LibraryView.swift"
+                "LibraryView.swift",
+                "TelemetryManager.swift",
+                "ActivationView.swift"
             ]
         )
     ]
