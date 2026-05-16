@@ -36,31 +36,35 @@ class LicenseManager: ObservableObject {
             return
         }
 
-        // ── LEMON SQUEEZY API ────────────────────────────────────────────────
-        let url = URL(string: "https://api.lemonsqueezy.com/v1/licenses/activate")!
+        // ── GUMROAD API ──────────────────────────────────────────────────
+        let permalink = "zwcysk" // Your Gumroad product ID
+        let url = URL(string: "https://api.gumroad.com/v2/licenses/verify")!
         var request = URLRequest(url: url)
         request.httpMethod = "POST"
-        request.setValue("application/json", forHTTPHeaderField: "Content-Type")
-        request.setValue("application/json", forHTTPHeaderField: "Accept")
+        request.setValue("application/x-www-form-urlencoded", forHTTPHeaderField: "Content-Type")
 
-        let body: [String: Any] = [
+        let bodyParams = [
+            "product_id": permalink,
             "license_key": key,
-            "instance_name": Host.current().localizedName ?? "Mac"
+            "increment_uses_count": "true"
         ]
-        request.httpBody = try? JSONSerialization.data(withJSONObject: body)
+        
+        request.httpBody = bodyParams.map { "\($0.key)=\($0.value)" }
+            .joined(separator: "&")
+            .data(using: .utf8)
 
         URLSession.shared.dataTask(with: request) { data, response, error in
             DispatchQueue.main.async {
                 self.isValidating = false
                 if let data = data,
                    let json = try? JSONSerialization.jsonObject(with: data) as? [String: Any],
-                   let activated = json["activated"] as? Bool, activated {
+                   let success = json["success"] as? Bool, success {
                     self._isPro = true
                     self.licenseKey = key
                 } else if let error = error {
                     self.lastError = "Connection Error: \(error.localizedDescription)"
                 } else {
-                    self.lastError = "Invalid Key. Check your email or try again."
+                    self.lastError = "Invalid License. Please check your Gumroad receipt."
                 }
             }
         }.resume()
@@ -159,6 +163,11 @@ class WallpaperManager: ObservableObject {
             guard let self = self else { return }
             let url = (!urls.isEmpty && index < urls.count) ? urls[index] : nil
             self.updateThumbnail(for: url)
+            
+            // ── REVENUE TRACKING ──
+            if let wallpaperURL = url {
+                TelemetryManager.shared.trackActivation(wallpaperURL: wallpaperURL)
+            }
         }.store(in: &cancellables)
         
         // Sync when thumbnail is ready OR when index changes for images
@@ -332,6 +341,27 @@ class WallpaperManager: ObservableObject {
         }
     }
     
+    private func isSystemPreventingDisplaySleep() -> Bool {
+        var dict: Unmanaged<CFDictionary>?
+        let result = IOPMCopyAssertionsByProcess(&dict)
+        if result == kIOReturnSuccess, let assertions = dict?.takeRetainedValue() as? [NSNumber: Any] {
+            let myPid = ProcessInfo.processInfo.processIdentifier
+            for (pid, info) in assertions {
+                if pid.int32Value == myPid { continue }
+                if let processAssertions = info as? [[String: Any]] {
+                    for assertion in processAssertions {
+                        if let type = assertion[kIOPMAssertionTypeKey as String] as? String {
+                            if type == kIOPMAssertionTypeNoDisplaySleep as String || type == kIOPMAssertionTypePreventUserIdleDisplaySleep as String {
+                                return true
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        return false
+    }
+    
     private func checkIdleState() {
         checkBatteryState()
         
@@ -346,8 +376,15 @@ class WallpaperManager: ObservableObject {
         
         let timeoutSeconds = Double(idleTimeoutMinutes) * 60.0
         
-        if idleSeconds >= timeoutSeconds && !isIdleActive {
-            DispatchQueue.main.async { self.showIdleWindow() }
+        if idleSeconds >= timeoutSeconds {
+            if !isSystemPreventingDisplaySleep() && !isIdleActive {
+                DispatchQueue.main.async { self.showIdleWindow() }
+            } else if isSystemPreventingDisplaySleep() && isIdleActive {
+                DispatchQueue.main.async { self.hideIdleWindow() }
+            }
+        } else if isIdleActive {
+            // Usually handled by event monitor, but fallback just in case
+            DispatchQueue.main.async { self.hideIdleWindow() }
         }
     }
     
