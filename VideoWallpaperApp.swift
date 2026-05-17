@@ -36,35 +36,31 @@ class LicenseManager: ObservableObject {
             return
         }
 
-        // ── GUMROAD API ──────────────────────────────────────────────────
-        let permalink = "zwcysk" // Your Gumroad product ID
-        let url = URL(string: "https://api.gumroad.com/v2/licenses/verify")!
+        // ── DODO PAYMENTS API ─────────────────────────────────────────────
+        let url = URL(string: "https://api.dodopayments.com/v1/licenses/activate")!
         var request = URLRequest(url: url)
         request.httpMethod = "POST"
-        request.setValue("application/x-www-form-urlencoded", forHTTPHeaderField: "Content-Type")
+        request.setValue("application/json", forHTTPHeaderField: "Content-Type")
+        request.setValue("application/json", forHTTPHeaderField: "Accept")
 
         let bodyParams = [
-            "product_id": permalink,
-            "license_key": key,
-            "increment_uses_count": "true"
+            "license_key": key
         ]
         
-        request.httpBody = bodyParams.map { "\($0.key)=\($0.value)" }
-            .joined(separator: "&")
-            .data(using: .utf8)
+        request.httpBody = try? JSONSerialization.data(withJSONObject: bodyParams)
 
         URLSession.shared.dataTask(with: request) { data, response, error in
             DispatchQueue.main.async {
                 self.isValidating = false
                 if let data = data,
                    let json = try? JSONSerialization.jsonObject(with: data) as? [String: Any],
-                   let success = json["success"] as? Bool, success {
+                   let activated = json["activated"] as? Bool, activated {
                     self._isPro = true
                     self.licenseKey = key
                 } else if let error = error {
                     self.lastError = "Connection Error: \(error.localizedDescription)"
                 } else {
-                    self.lastError = "Invalid License. Please check your Gumroad receipt."
+                    self.lastError = "Invalid License. Please check your Dodo Payments receipt."
                 }
             }
         }.resume()

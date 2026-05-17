@@ -69,7 +69,7 @@ struct LibraryView: View {
         }
         .alert("Pro Feature", isPresented: $library.showProAlert) {
             Button("Get Pro License") {
-                if let url = URL(string: "https://yourdomain.com#pricing") {
+                if let url = URL(string: "https://rineshbaj.github.io/LiveWallpaperPro-Distribution/#pricing") {
                     NSWorkspace.shared.open(url)
                 }
             }

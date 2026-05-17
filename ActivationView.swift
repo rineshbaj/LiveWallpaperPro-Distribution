@@ -15,7 +15,7 @@ struct ActivationView: View {
                 Text("Activate Pro")
                     .font(.system(size: 24, weight: .bold))
                 
-                Text("Enter your license key from Gumroad to unlock 500+ premium wallpapers and lifetime updates.")
+                Text("Enter your license key from Dodo Payments to unlock 500+ premium wallpapers and lifetime updates.")
                     .font(.system(size: 14))
                     .foregroundColor(.secondary)
                     .multilineTextAlignment(.center)
@@ -67,7 +67,7 @@ struct ActivationView: View {
             .disabled(licenseKey.isEmpty || license.isValidating)
             
             Button("Where is my key?") {
-                if let url = URL(string: "https://rineshba.gumroad.com/l/zwcysk") {
+                if let url = URL(string: "https://checkout.dodopayments.com/buy/pdt_0Nf37tk7kZ8U5K4WBSHNk") {
                     NSWorkspace.shared.open(url)
                 }
             }

@@ -450,7 +450,7 @@ struct AppSettingsView: View {
                             .padding(.top, 8)
 
                             Button {
-                                NSWorkspace.shared.open(URL(string: "https://yourdomain.com#pricing")!)
+                                NSWorkspace.shared.open(URL(string: "https://rineshbaj.github.io/LiveWallpaperPro-Distribution/#pricing")!)
                             } label: {
                                 HStack {
                                     Image(systemName: "arrow.up.right.circle.fill")
@@ -494,7 +494,7 @@ struct AppSettingsView: View {
         }
         .alert("Upgrade to Pro", isPresented: $showProAlert) {
             Button("Upgrade — $9.99") {
-                NSWorkspace.shared.open(URL(string: "https://yourdomain.com#pricing")!)
+                NSWorkspace.shared.open(URL(string: "https://rineshbaj.github.io/LiveWallpaperPro-Distribution/#pricing")!)
             }
             Button("Cancel", role: .cancel) { }
         } message: {
