@@ -351,8 +351,25 @@ class WallpaperManager: ObservableObject {
                 if let processAssertions = info as? [[String: Any]] {
                     for assertion in processAssertions {
                         if let type = assertion[kIOPMAssertionTypeKey as String] as? String {
-                            if type == kIOPMAssertionTypeNoDisplaySleep as String || type == kIOPMAssertionTypePreventUserIdleDisplaySleep as String {
+                            // 1. Check direct display sleep prevention
+                            if type == kIOPMAssertionTypeNoDisplaySleep as String ||
+                               type == kIOPMAssertionTypePreventUserIdleDisplaySleep as String {
                                 return true
+                            }
+                            
+                            // 2. Check general idle sleep prevention (e.g. playing audio, video, calls, or Electron media)
+                            if type == "NoIdleSleepAssertion" ||
+                               type == "PreventUserIdleSystemSleep" {
+                                let name = (assertion[kIOPMAssertionNameKey as String] as? String ?? "").lowercased()
+                                if name.contains("audio") ||
+                                   name.contains("video") ||
+                                   name.contains("play") ||
+                                   name.contains("music") ||
+                                   name.contains("movie") ||
+                                   name.contains("wake lock") ||
+                                   name.contains("preventuseridlesleep") {
+                                    return true
+                                }
                             }
                         }
                     }
