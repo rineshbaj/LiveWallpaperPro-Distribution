@@ -254,7 +254,7 @@ document.addEventListener('keydown', e => {
 });
 
 // ─── Dodo Payments Checkout ──────────────────────────────────────────────────
-const DODO_CHECKOUT_URL = 'https://checkout.dodopayments.com/buy/zero-drain-pro';
+const DODO_CHECKOUT_URL = 'https://checkout.dodopayments.com/buy/pdt_0Nf37tk7kZ8U5K4WBSHNk';
 
 window.openCheckout = function() {
   if (typeof DodoPayments !== 'undefined') {
