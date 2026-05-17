@@ -57,7 +57,8 @@ body:has(button:hover) #cursor-ring {
 /* ─── Nav ─────────────────────────────────────────────────────────────────── */
 nav {
   position: fixed;
-  top: 0; left: 0; right: 0;
+  top: 40px; /* Accounts for Urgency Banner */
+  left: 0; right: 0;
   z-index: 1000;
   padding: 20px 32px;
   display: flex;
@@ -1129,4 +1130,52 @@ footer {
 .nav-cta.btn-founding:hover {
   transform: translateY(-2px);
   box-shadow: 0 10px 20px var(--accent-glow);
+}
+
+
+/* ─── Urgency Banner ─────────────────────────────────────────────────────────── */
+.urgency-banner {
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: var(--accent);
+  color: #fff;
+  padding: 10px 20px;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 600;
+  z-index: 2000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+  letter-spacing: 0.02em;
+}
+
+.urgency-banner strong {
+  background: rgba(0,0,0,0.2);
+  padding: 2px 6px;
+  border-radius: 4px;
+  margin: 0 4px;
+}
+
+.banner-link {
+  color: #fff;
+  text-decoration: underline;
+  margin-left: 10px;
+  transition: opacity 0.2s;
+}
+
+.banner-link:hover {
+  opacity: 0.8;
+}
+
+/* Adjust nav for sticky banner */
+nav {
+  top: 40px;
+}
+
+nav.scrolled {
+  top: 0;
 }

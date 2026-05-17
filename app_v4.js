@@ -253,14 +253,26 @@ document.addEventListener('keydown', e => {
   if (e.key === 'Escape') window.closeLightbox();
 });
 
-// ─── Gumroad Checkout ──────────────────────────────────────────────────────────
-const GUMROAD_URL = 'https://rineshba.gumroad.com/l/zwcysk';
+// ─── Dodo Payments Checkout ──────────────────────────────────────────────────
+const DODO_CHECKOUT_URL = 'https://checkout.dodopayments.com/buy/zero-drain-pro';
 
 window.openCheckout = function() {
-  // The Gumroad script will automatically pick up clicks on elements with 'gumroad-button' class.
-  // This function remains as a fallback or for dynamic triggers.
-  window.location.href = GUMROAD_URL;
+  if (typeof DodoPayments !== 'undefined') {
+    DodoPayments.open({
+      url: DODO_CHECKOUT_URL
+    });
+  } else {
+    window.location.href = DODO_CHECKOUT_URL;
+  }
 };
+
+// Intercept clicks on dodo-button elements
+document.addEventListener('click', e => {
+  if (e.target.closest('.dodo-button')) {
+    e.preventDefault();
+    window.openCheckout();
+  }
+});
 
 // ─── Boot ──────────────────────────────────────────────────────────────────────
 init();

@@ -27,4 +27,4 @@ LWPRO was built from the ground up to be **invisible** to your system resources.
 - **Architecture:** Decoupled rendering thread for zero UI lag.
 
 ---
-[Visit Official Site](https://rineshbaj.github.io/LiveWallpaperPro-Distribution/) | [Get Pro Lifetime](https://rineshba.gumroad.com/l/zwcysk)
+[Visit Official Site](https://rineshbaj.github.io/LiveWallpaperPro-Distribution/) | [Get Pro Lifetime](https://checkout.dodopayments.com/buy/zero-drain-pro)
