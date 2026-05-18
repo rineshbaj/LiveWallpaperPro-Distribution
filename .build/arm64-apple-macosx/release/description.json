@@ -24,6 +24,10 @@
       "inputs" : [
         {
           "kind" : "file",
+          "name" : "/Users/Rinesh_buzz/Documents/Skill creator/VideoWallpaperApp/ActivationView.swift"
+        },
+        {
+          "kind" : "file",
           "name" : "/Users/Rinesh_buzz/Documents/Skill creator/VideoWallpaperApp/ContentView.swift"
         },
         {
@@ -33,6 +37,10 @@
         {
           "kind" : "file",
           "name" : "/Users/Rinesh_buzz/Documents/Skill creator/VideoWallpaperApp/LibraryView.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/Rinesh_buzz/Documents/Skill creator/VideoWallpaperApp/TelemetryManager.swift"
         },
         {
           "kind" : "file",
@@ -59,9 +67,11 @@
       "moduleName" : "LiveWallpaperPro",
       "moduleOutputPath" : "/Users/Rinesh_buzz/Documents/Skill creator/VideoWallpaperApp/.build/arm64-apple-macosx/release/Modules/LiveWallpaperPro.swiftmodule",
       "objects" : [
+        "/Users/Rinesh_buzz/Documents/Skill creator/VideoWallpaperApp/.build/arm64-apple-macosx/release/LiveWallpaperPro.build/ActivationView.swift.o",
         "/Users/Rinesh_buzz/Documents/Skill creator/VideoWallpaperApp/.build/arm64-apple-macosx/release/LiveWallpaperPro.build/ContentView.swift.o",
         "/Users/Rinesh_buzz/Documents/Skill creator/VideoWallpaperApp/.build/arm64-apple-macosx/release/LiveWallpaperPro.build/LibraryManager.swift.o",
         "/Users/Rinesh_buzz/Documents/Skill creator/VideoWallpaperApp/.build/arm64-apple-macosx/release/LiveWallpaperPro.build/LibraryView.swift.o",
+        "/Users/Rinesh_buzz/Documents/Skill creator/VideoWallpaperApp/.build/arm64-apple-macosx/release/LiveWallpaperPro.build/TelemetryManager.swift.o",
         "/Users/Rinesh_buzz/Documents/Skill creator/VideoWallpaperApp/.build/arm64-apple-macosx/release/LiveWallpaperPro.build/VideoWallpaperApp.swift.o",
         "/Users/Rinesh_buzz/Documents/Skill creator/VideoWallpaperApp/.build/arm64-apple-macosx/release/LiveWallpaperPro.build/WallpaperView.swift.o",
         "/Users/Rinesh_buzz/Documents/Skill creator/VideoWallpaperApp/.build/arm64-apple-macosx/release/LiveWallpaperPro.build/WallpaperWindow.swift.o"
@@ -110,6 +120,10 @@
       "outputs" : [
         {
           "kind" : "file",
+          "name" : "/Users/Rinesh_buzz/Documents/Skill creator/VideoWallpaperApp/.build/arm64-apple-macosx/release/LiveWallpaperPro.build/ActivationView.swift.o"
+        },
+        {
+          "kind" : "file",
           "name" : "/Users/Rinesh_buzz/Documents/Skill creator/VideoWallpaperApp/.build/arm64-apple-macosx/release/LiveWallpaperPro.build/ContentView.swift.o"
         },
         {
@@ -119,6 +133,10 @@
         {
           "kind" : "file",
           "name" : "/Users/Rinesh_buzz/Documents/Skill creator/VideoWallpaperApp/.build/arm64-apple-macosx/release/LiveWallpaperPro.build/LibraryView.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/Rinesh_buzz/Documents/Skill creator/VideoWallpaperApp/.build/arm64-apple-macosx/release/LiveWallpaperPro.build/TelemetryManager.swift.o"
         },
         {
           "kind" : "file",
@@ -139,9 +157,11 @@
       ],
       "prepareForIndexing" : false,
       "sources" : [
+        "/Users/Rinesh_buzz/Documents/Skill creator/VideoWallpaperApp/ActivationView.swift",
         "/Users/Rinesh_buzz/Documents/Skill creator/VideoWallpaperApp/ContentView.swift",
         "/Users/Rinesh_buzz/Documents/Skill creator/VideoWallpaperApp/LibraryManager.swift",
         "/Users/Rinesh_buzz/Documents/Skill creator/VideoWallpaperApp/LibraryView.swift",
+        "/Users/Rinesh_buzz/Documents/Skill creator/VideoWallpaperApp/TelemetryManager.swift",
         "/Users/Rinesh_buzz/Documents/Skill creator/VideoWallpaperApp/VideoWallpaperApp.swift",
         "/Users/Rinesh_buzz/Documents/Skill creator/VideoWallpaperApp/WallpaperView.swift",
         "/Users/Rinesh_buzz/Documents/Skill creator/VideoWallpaperApp/WallpaperWindow.swift"
@@ -161,9 +181,11 @@
       "-package-name",
       "videowallpaperapp",
       "-c",
+      "/Users/Rinesh_buzz/Documents/Skill creator/VideoWallpaperApp/ActivationView.swift",
       "/Users/Rinesh_buzz/Documents/Skill creator/VideoWallpaperApp/ContentView.swift",
       "/Users/Rinesh_buzz/Documents/Skill creator/VideoWallpaperApp/LibraryManager.swift",
       "/Users/Rinesh_buzz/Documents/Skill creator/VideoWallpaperApp/LibraryView.swift",
+      "/Users/Rinesh_buzz/Documents/Skill creator/VideoWallpaperApp/TelemetryManager.swift",
       "/Users/Rinesh_buzz/Documents/Skill creator/VideoWallpaperApp/VideoWallpaperApp.swift",
       "/Users/Rinesh_buzz/Documents/Skill creator/VideoWallpaperApp/WallpaperView.swift",
       "/Users/Rinesh_buzz/Documents/Skill creator/VideoWallpaperApp/WallpaperWindow.swift",
@@ -237,6 +259,10 @@
         },
         {
           "kind" : "file",
+          "name" : "/Users/Rinesh_buzz/Documents/Skill creator/VideoWallpaperApp/ActivationView.swift"
+        },
+        {
+          "kind" : "file",
           "name" : "/Users/Rinesh_buzz/Documents/Skill creator/VideoWallpaperApp/ContentView.swift"
         },
         {
@@ -246,6 +272,10 @@
         {
           "kind" : "file",
           "name" : "/Users/Rinesh_buzz/Documents/Skill creator/VideoWallpaperApp/LibraryView.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/Rinesh_buzz/Documents/Skill creator/VideoWallpaperApp/TelemetryManager.swift"
         },
         {
           "kind" : "file",
@@ -271,6 +301,10 @@
         },
         {
           "kind" : "file",
+          "name" : "/Users/Rinesh_buzz/Documents/Skill creator/VideoWallpaperApp/.build/arm64-apple-macosx/release/LiveWallpaperPro.build/ActivationView.swift.o"
+        },
+        {
+          "kind" : "file",
           "name" : "/Users/Rinesh_buzz/Documents/Skill creator/VideoWallpaperApp/.build/arm64-apple-macosx/release/LiveWallpaperPro.build/ContentView.swift.o"
         },
         {
@@ -280,6 +314,10 @@
         {
           "kind" : "file",
           "name" : "/Users/Rinesh_buzz/Documents/Skill creator/VideoWallpaperApp/.build/arm64-apple-macosx/release/LiveWallpaperPro.build/LibraryView.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/Rinesh_buzz/Documents/Skill creator/VideoWallpaperApp/.build/arm64-apple-macosx/release/LiveWallpaperPro.build/TelemetryManager.swift.o"
         },
         {
           "kind" : "file",

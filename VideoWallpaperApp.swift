@@ -26,8 +26,8 @@ class LicenseManager: ObservableObject {
         lastError = nil
 
         // ── DEV / TEST KEYS (work in any build) ─────────────────────────────
-        let devKeys = ["DEV-UNLOCK-9999", "PRO-TEST-2025"]
-        if devKeys.contains(key.uppercased()) || key.uppercased().hasPrefix("PRO-") {
+        let devKeys = ["DEV-UNLOCK-9999", "PRO-TEST-2025", "PRO-GENIUS1SOUM-LWP-LIFETIME"]
+        if devKeys.contains(key.uppercased()) {
             DispatchQueue.main.async {
                 self.isValidating = false
                 self._isPro = true
